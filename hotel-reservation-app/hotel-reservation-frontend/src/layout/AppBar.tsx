@@ -49,7 +49,7 @@ function UserMenu() {
         open={Boolean(anchorElUser)}
         onClose={handleCloseUserMenu}
       >
-        <MenuItem onClick=onClick={() => {
+        <MenuItem onClick={() => {
           sessionStorage.removeItem("userInfo");
           window.location.href =
             `/auth/logout?session_hint=${Cookies.get('session_hint')}`;
